@@ -4,7 +4,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from flask import redirect
-from flask import url_for
+# from flask import url_for
 
 import time
 
@@ -15,14 +15,15 @@ app = Flask(__name__)
 # message_list 用来存储所有的 message
 message_list = []
 
+
 # 用 log 函数把所有输出写入到文件，这样就能很方便地掌控全局了
 # 即便你关掉程序，也能再次打开来查看，这就是个时光机
 def log(*args, **kwargs):
-    format = '%Y/%m/%d %H:%M:%S'
+    f = '%Y/%m/%d %H:%M:%S'
     value = time.localtime(int(time.time()))
-    dt = time.strftime(format, value)
+    dt = time.strftime(f, value)
     # 中文 windows 平台默认打开的文件编码是 gbk 所以需要指定一下
-    with open('log.gua.txt', 'a', encoding='utf-8') as f:
+    with open('日志.txt', 'a', encoding='utf-8') as f:
         # 通过 file 参数可以把输出写入到文件 f 中
         # 需要注意的是 **kwargs 必须是最后一个参数
         print(dt, *args, file=f, **kwargs)
@@ -36,9 +37,6 @@ def log(*args, **kwargs):
 # 注意 methods 参数是一个 list，它规定了这个函数能接受的 HTTP 方法
 @app.route('/', methods=['GET'])
 def hello_world():
-    """
-    路由函数 return 的是 body
-    """
     return 'Hello Gua'
 
 
@@ -47,7 +45,7 @@ def hello_world():
 @app.route('/message')
 def message_view():
     # 打印请求的方法 GET 或者 POST
-    log('msg view 请求方法', request.method)
+    log('请求方法', request.method)
 
     # request.args 是 flask 保存 URL 中的参数的属性
     # 访问 http://127.0.0.1:2000/message?a=1
@@ -56,10 +54,9 @@ def message_view():
     log('request, query 参数', request.args)
 
     # render_template 是一个 flask 内置函数
-    # 它的作用是读取并返回 templates 文件夹中的模板文件
+    # 它的作业是读取并返回 templates 文件夹中的模板文件
     # messages 是传给模板的参数，这样就能在模板中使用这个变量了
-    return render_template('message_index.html',
-                           messages=message_list)
+    return render_template('message_index.html', messages=message_list)
 
 
 # 这个路由函数只支持 POST 方法
@@ -77,10 +74,10 @@ def message_add():
     message_list.append(msg)
 
     # 这和我们写过的函数是一样的
-    # return redirect('/message')
+    return redirect('/message')
     # 一般来说，我们会用 url_for 生成路由，如下
     # 注意, url_for 参数是路由函数的名字（格式为字符串）
-    return redirect(url_for('message_view'))
+    # return redirect(url_for('message_view'))
 
 
 # 运行服务器
@@ -93,6 +90,6 @@ if __name__ == '__main__':
         port=2000,
     )
     app.run(**config)
-    # app.run() 开始运行服务器，服务器的默认端口是5000
+    # app.run() 开始运行服务器
     # 所以你访问下面的网址就可以打开网站了
     # http://127.0.0.1:2000/

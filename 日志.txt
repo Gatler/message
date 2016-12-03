@@ -1,0 +1,14 @@
+2016/12/03 18:47:12 请求方法 GET
+2016/12/03 18:47:12 request, query 参数 ImmutableMultiDict([])
+2016/12/03 19:01:24 请求方法 GET
+2016/12/03 19:01:24 request, query 参数 ImmutableMultiDict([('fgsdfgs', '124545')])
+2016/12/03 19:01:26 请求方法 GET
+2016/12/03 19:01:26 request, query 参数 ImmutableMultiDict([('fgsdfgs', '124545')])
+2016/12/03 19:03:09 message_add 请求方法 POST
+2016/12/03 19:03:09 request, POST 的 form 表单数据 ImmutableMultiDict([('msg_post', '123')])
+2016/12/03 19:03:09 请求方法 GET
+2016/12/03 19:03:09 request, query 参数 ImmutableMultiDict([])
+2016/12/03 19:03:12 message_add 请求方法 POST
+2016/12/03 19:03:12 request, POST 的 form 表单数据 ImmutableMultiDict([('msg_post', '456')])
+2016/12/03 19:03:13 请求方法 GET
+2016/12/03 19:03:13 request, query 参数 ImmutableMultiDict([])

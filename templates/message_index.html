@@ -4,12 +4,6 @@
     <!-- 指明字符编码为 utf-8 否则中文会乱码 -->
     <meta charset="utf-8">
     <title>留言板</title>
-    <style>
-        .gua-message {
-            background: lightblue;
-            margin: 10px;
-        }
-    </style>
 </head>
 <body>
     <h1>留言板</h1>
@@ -35,7 +29,7 @@
     <!-- 注意 m 本身是一个字典，但是你可以用 . 的语法来引用 -->
     <!-- 这是 Jinja2 模板的功能 -->
     {% for m in messages %}
-        <div class="gua-message">{{ m.content }}</div>
+        <div>{{ m.content }}</div>
     {% endfor %}
 </body>
 </html>
