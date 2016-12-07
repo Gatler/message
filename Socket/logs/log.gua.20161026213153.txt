@@ -1,0 +1,18 @@
+2016/10/26 21:31:53 start at :3000
+2016/10/26 21:31:54 raw data b'GET /login HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate, sdch\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n'
+2016/10/26 21:31:54 path and query /login {}
+2016/10/26 21:31:57 raw data
+b'POST /login HTTP/1.1\r\nHost: localhost:3000
+\r\nConnection: keep-alive\r\nContent-Length: 25
+\r\nCache-Control: max-age=0\r\n
+Origin: http://localhost:3000\r\n
+Upgrade-Insecure-Requests: 1\r\n
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded
+\r\nAccept: text/html,application/xhtml+xml,appli
+cation/xml;q=0.9,image/webp,*/*;q=0.8\r\nRefe
+rer: http://localhost:3000/login\r\nAccept-E
+ncoding: gzip, deflate\r\nAccept-Language: e
+n-US,en;q=0.8\r\n\r\n'
+2016/10/26 21:31:57 path and query /login {}
+2016/10/26 21:31:57 还原url编码后的body数据   b'POST /login HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 25\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/login\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n'
+2016/10/26 21:31:57 debug ['']

@@ -1,0 +1,104 @@
+2016/10/26 21:33:08 start at :3000
+2016/10/26 21:33:10 raw data b'GET /login HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate, sdch\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n'
+2016/10/26 21:33:10 path and query /login {}
+2016/10/26 21:33:10 raw data b'GET /favicon.ico HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nAccept: */*\r\nReferer: http://localhost:3000/login\r\nAccept-Encoding: gzip, deflate, sdch\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n'
+2016/10/26 21:33:10 path and query /favicon.ico {}
+2016/10/26 21:33:13 raw data b'POST /login HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 25\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/login\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8
+\r\n\r\nusername=gua&password=123'
+2016/10/26 21:33:13 path and query /login {}
+2016/10/26 21:33:13 还原url编码后的body数据 username=gua&password=123 username=gua&password=123 b'POST /login HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 25\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/login\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8\r\n\r\nusername=gua&password=123'
+2016/10/26 21:33:13 debug ['username=gua', 'password=123']
+2016/10/26 21:33:13 load [
+  {
+    "password": "123",
+    "username": "gua"
+  }
+]
+2016/10/26 21:37:31 raw data b'GET /register HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate, sdch\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n'
+2016/10/26 21:37:31 path and query /register {}
+2016/10/26 21:37:35 raw data b'POST /register HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 26\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/register\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8\r\n\r\nusername=gua1&password=123'
+2016/10/26 21:37:35 path and query /register {}
+2016/10/26 21:37:35 还原url编码后的body数据 username=gua1&password=123 username=gua1&password=123 b'POST /register HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 26\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/register\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8\r\n\r\nusername=gua1&password=123'
+2016/10/26 21:37:35 debug ['username=gua1', 'password=123']
+2016/10/26 21:37:35 debug save
+2016/10/26 21:37:35 load [
+  {
+    "password": "123",
+    "username": "gua"
+  }
+]
+2016/10/26 21:37:35 models [< User
+password: (123)
+username: (gua) >
+]
+2016/10/26 21:37:35 save dbfiles/User.txt [
+  {
+    "password": "123",
+    "username": "gua"
+  },
+  {
+    "password": "123",
+    "username": "gua1"
+  }
+] [{'password': '123', 'username': 'gua'}, {'password': '123', 'username': 'gua1'}]
+2016/10/26 21:37:35 load [
+  {
+    "password": "123",
+    "username": "gua"
+  },
+  {
+    "password": "123",
+    "username": "gua1"
+  }
+]
+2016/10/26 21:37:41 raw data b''
+2016/10/26 21:37:42 raw data b'POST /register HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 25\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/register\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8\r\n\r\nusername=gua&password=123'
+2016/10/26 21:37:42 path and query /register {}
+2016/10/26 21:37:42 还原url编码后的body数据 username=gua&password=123 username=gua&password=123 b'POST /register HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 25\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/register\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US,en;q=0.8\r\n\r\nusername=gua&password=123'
+2016/10/26 21:37:42 debug ['username=gua', 'password=123']
+2016/10/26 21:37:42 debug save
+2016/10/26 21:37:42 load [
+  {
+    "password": "123",
+    "username": "gua"
+  },
+  {
+    "password": "123",
+    "username": "gua1"
+  }
+]
+2016/10/26 21:37:42 models [< User
+password: (123)
+username: (gua) >
+, < User
+password: (123)
+username: (gua1) >
+]
+2016/10/26 21:37:42 save dbfiles/User.txt [
+  {
+    "password": "123",
+    "username": "gua"
+  },
+  {
+    "password": "123",
+    "username": "gua1"
+  },
+  {
+    "password": "123",
+    "username": "gua"
+  }
+] [{'password': '123', 'username': 'gua'}, {'password': '123', 'username': 'gua1'}, {'password': '123', 'username': 'gua'}]
+2016/10/26 21:37:42 load [
+  {
+    "password": "123",
+    "username": "gua"
+  },
+  {
+    "password": "123",
+    "username": "gua1"
+  },
+  {
+    "password": "123",
+    "username": "gua"
+  }
+]
